@@ -1,0 +1,13 @@
+<section class="col-3">
+  <p class="m-3 text-danger" *ngIf="error">Username o password incorrectos</p>
+  <h2 class="m-3">Login</h2>
+  <section class="form-group m-3">
+    <label for="username">Username:</label>
+    <input type="text" class="form-control" id="username" [(ngModel)]="name">
+  </section>
+  <section class="form-group m-3">
+    <label for="password">Password:</label>
+    <input type="text" class="form-control" id="password" [(ngModel)]="password">
+  </section>
+  <input class="btn btn-primary m-3" (click)="login()" value="Login">
+</section>
